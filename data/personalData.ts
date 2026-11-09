@@ -1,5 +1,5 @@
 import type { IconType } from 'react-icons';
-import { FaBook, FaCar, FaHeartbeat, FaUser, FaMusic, FaChalkboardTeacher, FaSearch, FaShieldAlt, FaEnvelopeOpenText, FaHospital, FaSitemap } from 'react-icons/fa';
+import { FaBook, FaCar, FaHeartbeat, FaUser, FaMusic, FaChalkboardTeacher, FaSearch, FaShieldAlt, FaEnvelopeOpenText, FaHospital, FaSitemap, FaLayerGroup } from 'react-icons/fa';
 export interface PersonalData {
   name: string;
   title: string;
@@ -58,6 +58,8 @@ export interface Project {
   icon: IconType;
   githubUrl: string;
   additionalGithubUrls?: string[];
+  /** The deployed app, when there is one. */
+  liveUrl?: string;
   media: ProjectMedia[];
 }
 
@@ -142,13 +144,28 @@ export const artData: ArtPiece[] = [
 
 export const projectsData: Project[] = [
   {
+    id: 12,
+    title: "Tech Stack Advisor",
+    description: "Tech Stack Advisor is the companion to Architecture Advisor. Once you know the shape of your system, it recommends the tools to build it with: a language, a frontend, a backend, a database and hosting that work together. You answer a few questions about the project, the team and the budget, and a fixed set of rules built from published books, official docs and developer surveys ranks the options with scores and reasons you can see. Every fact carries its source and the date it was checked, and the same answers always give the same result. An AI model then explains the stack in plain words and can only nudge a few scores a little; the app works fully with the AI turned off.",
+    tags: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Vitest", "Playwright", "AI"],
+    icon: FaLayerGroup,
+    githubUrl: "https://github.com/lochana-dahanayake/tech-stack-advisor",
+    liveUrl: "https://tech-stack-advisor-one.vercel.app",
+    media: [
+      { type: 'video', url: 'https://www.youtube.com/embed/B5gsfuyz2Ac', caption: 'Walkthrough: from the questions to a recommended stack with its AI explanation.' },
+    ]
+  },
+  {
     id: 11,
     title: "Architecture Advisor",
     description: "Architecture Advisor is a free web app that helps you pick a software architectural style for a system you're planning. You describe what matters to you, like scalability, cost or how fast the team needs to ship, and it ranks 13 styles with scores you can see. The ranking comes from a fixed set of rules built on published architecture books, so the same answers always give the same result. An AI model then writes a plain explanation and can only nudge each score a little, and the app still works fully if the AI is turned off.",
     tags: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Vitest", "AI"],
     icon: FaSitemap,
     githubUrl: "https://github.com/lochana-dahanayake/architecture-advisor",
-    media: []
+    liveUrl: "https://architecture-advisor-pink.vercel.app",
+    media: [
+      { type: 'video', url: 'https://www.youtube.com/embed/fHSjsP3lNMc', caption: 'Walkthrough: describing a project and comparing the ranked architecture styles.' },
+    ]
   },
   {
     id: 10,

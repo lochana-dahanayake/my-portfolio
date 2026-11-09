@@ -87,14 +87,26 @@ export default function ProjectCaseStudyPage({ params }: ProjectCaseStudyProps) 
               </span>
             ))}
           </div>
-          <a
-            href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-primary w-fit"
-          >
-            View source on GitHub →
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-primary w-fit"
+            >
+              View source on GitHub →
+            </a>
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline w-fit"
+              >
+                Open the app →
+              </a>
+            )}
+          </div>
         </div>
 
         <div className="space-y-8">

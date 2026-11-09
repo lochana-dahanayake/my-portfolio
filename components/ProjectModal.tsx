@@ -204,6 +204,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                 View source
               </a>
             )}
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-outline"
+              >
+                Open the app
+              </a>
+            )}
             {hasCaseStudy && (
               <Link
                 href={`/projects/${project.id}`}
