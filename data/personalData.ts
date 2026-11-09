@@ -174,6 +174,7 @@ export const projectsData: Project[] = [
     tags: ["AI Agents", "Gemini", "C#", ".NET", "React", "Flutter", "PostgreSQL"],
     icon: FaHospital,
     githubUrl: "https://github.com/lochana-dahanayake/carelanka",
+    liveUrl: "https://carelanka.vercel.app",
     media: [
       { type: 'video', url: 'https://www.youtube.com/embed/O3VtEQj4WMc', caption: 'Walkthrough of CareLanka across the staff website and the phone app.' },
     ]
