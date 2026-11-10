@@ -1,5 +1,5 @@
 import type { IconType } from 'react-icons';
-import { FaBook, FaCar, FaHeartbeat, FaUser, FaMusic, FaChalkboardTeacher, FaSearch, FaShieldAlt, FaEnvelopeOpenText, FaHospital, FaSitemap, FaLayerGroup, FaBookOpen, FaBell, FaClipboardList, FaBoxes } from 'react-icons/fa';
+import { FaBook, FaCar, FaHeartbeat, FaMusic, FaChalkboardTeacher, FaSearch, FaShieldAlt, FaEnvelopeOpenText, FaHospital, FaSitemap, FaLayerGroup, FaBookOpen, FaBell, FaClipboardList, FaBoxes } from 'react-icons/fa';
 export interface PersonalData {
   name: string;
   title: string;
@@ -281,18 +281,6 @@ export const projectsData: Project[] = [
     media: [
       { type: 'video', url: 'https://youtube.com/embed/your-video-id', caption: 'A video showing the Streamlit app classifying different songs.' },
       { type: 'image', url: '/projects/genre-1.png', caption: 'The user interface of the genre classification app.' },
-    ]
-  },
-  {
-    id: 6,
-    title: "Personal Portfolio Website",
-    description: "This portfolio started as a side project to learn Next.js, TypeScript, Tailwind CSS, and Framer Motion properly. I designed the layout myself and kept iterating on the animations and sections until it felt smooth and easy to read. I also set it up on Vercel so I can push changes from GitHub and see them live without any extra steps.",
-    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    icon: FaUser,
-    githubUrl: "https://github.com/lochana-dahanayake/my-portfolio",
-    liveUrl: "https://lochana-dahanayake.me",
-    media: [
-      { type: 'image', url: '/projects/portfolio-1.png', caption: 'The main landing page of the portfolio.' },
     ]
   },
   {

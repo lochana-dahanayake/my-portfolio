@@ -69,7 +69,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
      that predated it. The two ids are a separate, older opt-out and are kept
      as-is; they belong in personalData as a field rather than here. */
   const hasCaseStudy =
-    project.media.length > 0 && project.id !== 5 && project.id !== 6;
+    project.media.length > 0 && project.id !== 5;
 
   useEffect(() => {
     setRepoMenuOpen(false);
