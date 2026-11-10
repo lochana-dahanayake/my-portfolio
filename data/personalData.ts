@@ -1,5 +1,5 @@
 import type { IconType } from 'react-icons';
-import { FaBook, FaCar, FaHeartbeat, FaUser, FaMusic, FaChalkboardTeacher, FaSearch, FaShieldAlt, FaEnvelopeOpenText, FaHospital, FaSitemap, FaLayerGroup } from 'react-icons/fa';
+import { FaBook, FaCar, FaHeartbeat, FaUser, FaMusic, FaChalkboardTeacher, FaSearch, FaShieldAlt, FaEnvelopeOpenText, FaHospital, FaSitemap, FaLayerGroup, FaBookOpen, FaBell, FaClipboardList, FaBoxes } from 'react-icons/fa';
 export interface PersonalData {
   name: string;
   title: string;
@@ -144,6 +144,28 @@ export const artData: ArtPiece[] = [
 
 export const projectsData: Project[] = [
   {
+    id: 13,
+    title: "Story-sim",
+    description: "Story-sim turns one changed rule of reality into a short picture book. You type a \"what if\", like the moon being twice as close to Earth, and it checks it understood you before writing anything. Gemini then works out the knock-on effects of the rule and writes a 12-page story from the most interesting ones, and Cloudflare Workers AI draws a picture for every page. The first chapter fixes an art style that every later chapter reuses, so you can add another rule to the same world and the pictures still look like one book. Everything is kept in your browser, with no accounts and no server database.",
+    tags: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Gemini", "Cloudflare Workers AI", "IndexedDB"],
+    icon: FaBookOpen,
+    githubUrl: "https://github.com/lochana-dahanayake/story-sim",
+    media: [
+      { type: 'video', url: 'https://www.youtube.com/embed/278FYoei_fg', caption: 'Walkthrough: typing a rule, then reading the picture book it becomes.' },
+    ]
+  },
+  {
+    id: 14,
+    title: "CourseWeb Notifications Filter",
+    description: "SLIIT's CourseWeb shows every student the notifications for every group, campus and batch, so your own deadlines get buried among everyone else's. This browser extension reads each title, works out who it's meant for, and hides the ones that aren't for your group in the notification bell and the timeline, and the bell count only includes your own unread notifications. On module pages it greys other groups' activities out instead of hiding them, so you can still open anything. It never clicks, submits or marks anything as read. There's also a matching set of Outlook rules for the CourseWeb emails.",
+    tags: ["JavaScript", "Browser Extension", "Manifest V3", "Outlook Rules"],
+    icon: FaBell,
+    githubUrl: "https://github.com/lochana-dahanayake/courseweb-notifications-filter",
+    media: [
+      { type: 'video', url: 'https://www.youtube.com/embed/A28_9_xR-bA', caption: 'Walkthrough: setting a group, then the bell, timeline and a module page filtered.' },
+    ]
+  },
+  {
     id: 12,
     title: "Tech Stack Advisor",
     description: "Tech Stack Advisor is the companion to Architecture Advisor. Once you know the shape of your system, it recommends the tools to build it with: a language, a frontend, a backend, a database and hosting that work together. You answer a few questions about the project, the team and the budget, and a fixed set of rules built from published books, official docs and developer surveys ranks the options with scores and reasons you can see. Every fact carries its source and the date it was checked, and the same answers always give the same result. An AI model then explains the stack in plain words and can only nudge a few scores a little; the app works fully with the AI turned off.",
@@ -180,6 +202,17 @@ export const projectsData: Project[] = [
     ]
   },
   {
+    id: 15,
+    title: "Complaint Management System",
+    description: "This is a group project: a complaint management system that several companies share. Customers and employees file complaints against a company and attach evidence, the super admin reviews each one and assigns it to an admin, and the case then moves through departments to a resolution, with chat and internal notes along the way. Customers, employees, company admins, department users, admins and the super admin each get their own portal and only see what their role allows.",
+    tags: ["Java", "Spring Boot", "Spring Security", "MySQL", "JavaScript", "Bootstrap"],
+    icon: FaClipboardList,
+    githubUrl: "https://github.com/lochana-dahanayake/company-complaint-system",
+    media: [
+      { type: 'video', url: 'https://www.youtube.com/embed/HcOH_accfX4', caption: 'Walkthrough: a customer files a complaint, the super admin assigns it and an admin picks it up.' },
+    ]
+  },
+  {
     id: 1,
     title: "Chapterly E-commerce Bookstore",
     description: "Chapterly Bookstore was my first real shot at building a full-stack app on my own. It’s basically an online bookstore where you can browse, add items to a cart, and check out. Since I was still learning and didn't know much about databases, I didn't use a real one—I just saved data in memory or files. That made it pretty limited, but it helped me understand how to connect the frontend to the backend and manage user actions.",
@@ -199,6 +232,17 @@ export const projectsData: Project[] = [
     githubUrl: "https://github.com/lochana-dahanayake/learn-mate-system",
     media: [
       { type: 'video', url: 'https://www.youtube.com/embed/B6u5wYHMLtw', caption: 'Full walkthrough showing role-based flows inside Learn Mate.' },
+    ]
+  },
+  {
+    id: 16,
+    title: "IMS-185 Inventory Management System",
+    description: "IMS-185 was our group project for the OOP module: a web app for keeping track of stock. You add items with a quantity, price and expiry date, search them, sort them so the ones expiring soonest come first, and get alerts when stock runs low, along with simple reports and an analytics page. There's no database; everything is saved to text files, and the list of recently changed items runs on a stack we wrote ourselves.",
+    tags: ["Java", "Servlets", "JSP", "Tomcat", "OOP"],
+    icon: FaBoxes,
+    githubUrl: "https://github.com/lochana-dahanayake/Inventory-Stock-Management-System",
+    media: [
+      { type: 'video', url: 'https://www.youtube.com/embed/hYrp-8Ek4E8', caption: 'Walkthrough: signing up, adding an item, then search, sorting, alerts and reports.' },
     ]
   },
   {
@@ -243,6 +287,7 @@ export const projectsData: Project[] = [
     tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     icon: FaUser,
     githubUrl: "https://github.com/lochana-dahanayake/my-portfolio",
+    liveUrl: "https://lochana-dahanayake.me",
     media: [
       { type: 'image', url: '/projects/portfolio-1.png', caption: 'The main landing page of the portfolio.' },
     ]
