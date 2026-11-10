@@ -205,10 +205,11 @@ export const projectsData: Project[] = [
   {
     id: 15,
     title: "Complaint Management System",
-    description: "This is a group project: a complaint management system that several companies share. Customers and employees file complaints against a company and attach evidence, the super admin reviews each one and assigns it to an admin, and the case then moves through departments to a resolution, with chat and internal notes along the way. Customers, employees, company admins, department users, admins and the super admin each get their own portal and only see what their role allows.",
+    description: "This is a group project: a complaint management system that several companies share. Customers and employees file complaints against a company and attach evidence, the super admin reviews each one and assigns it to an admin, and the case then moves through departments to a resolution, with chat and internal notes along the way. Customers, employees, company admins, department users, admins and the super admin each get their own portal and only see what their role allows. The live demo starts with sample data and resets whenever it restarts; you can sign in as the customer cust_kavindi (Customer@123) or an admin, admin_nimal (Admin@123).",
     tags: ["Java", "Spring Boot", "Spring Security", "MySQL", "JavaScript", "Bootstrap"],
     icon: FaClipboardList,
     githubUrl: "https://github.com/lochana-dahanayake/company-complaint-system",
+    liveUrl: "https://company-complaint-system.onrender.com",
     media: [
       { type: 'video', url: 'https://www.youtube.com/embed/HcOH_accfX4', caption: 'Walkthrough: a customer files a complaint, the super admin assigns it and an admin picks it up.' },
     ]
@@ -238,10 +239,11 @@ export const projectsData: Project[] = [
   {
     id: 16,
     title: "IMS-185 Inventory Management System",
-    description: "IMS-185 was our group project for the OOP module: a web app for keeping track of stock. You add items with a quantity, price and expiry date, search them, sort them so the ones expiring soonest come first, and get alerts when stock runs low, along with simple reports and an analytics page. There's no database; everything is saved to text files, and the list of recently changed items runs on a stack we wrote ourselves.",
+    description: "IMS-185 was our group project for the OOP module: a web app for keeping track of stock. You add items with a quantity, price and expiry date, search them, sort them so the ones expiring soonest come first, and get alerts when stock runs low, along with simple reports and an analytics page. There's no database; everything is saved to text files, and the list of recently changed items runs on a stack we wrote ourselves. To try the live demo, sign up first; it starts with some sample stock and resets whenever it restarts.",
     tags: ["Java", "Servlets", "JSP", "Tomcat", "OOP"],
     icon: FaBoxes,
     githubUrl: "https://github.com/lochana-dahanayake/Inventory-Stock-Management-System",
+    liveUrl: "https://ims-185-inventory.onrender.com",
     media: [
       { type: 'video', url: 'https://www.youtube.com/embed/hYrp-8Ek4E8', caption: 'Walkthrough: signing up, adding an item, then search, sorting, alerts and reports.' },
     ]
