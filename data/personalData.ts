@@ -150,6 +150,7 @@ export const projectsData: Project[] = [
     tags: ["TypeScript", "Next.js", "React", "Tailwind CSS", "Gemini", "Cloudflare Workers AI", "IndexedDB"],
     icon: FaBookOpen,
     githubUrl: "https://github.com/lochana-dahanayake/story-sim",
+    liveUrl: "https://story-sim.vercel.app",
     media: [
       { type: 'video', url: 'https://www.youtube.com/embed/278FYoei_fg', caption: 'Walkthrough: typing a rule, then reading the picture book it becomes.' },
     ]
