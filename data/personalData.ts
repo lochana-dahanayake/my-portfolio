@@ -228,10 +228,11 @@ export const projectsData: Project[] = [
   {
     id: 2,
     title: "Learn Mate System",
-    description: "This is the project I built for the Year 2 Semester 1 SE2030 module. It's a simple management platform with separate dashboards for students, teachers, and admins. The main focus was on role-based access and actions, so each type of user only sees and does what they are allowed to inside the system.",
+    description: "This is the project I built for the Year 2 Semester 1 SE2030 module. It's a simple management platform with separate dashboards for students, teachers, and admins. The main focus was on role-based access and actions, so each type of user only sees and does what they are allowed to inside the system. The live demo starts with sample classes and students and resets whenever it restarts; you can sign in as the admin, admin (Admin@12345), or a student, student1 (Student@123).",
     tags: ["Java", "Spring Boot", "Thymeleaf", "MySQL"],
     icon: FaChalkboardTeacher,
     githubUrl: "https://github.com/lochana-dahanayake/learn-mate-system",
+    liveUrl: "https://learn-mate-system.onrender.com",
     media: [
       { type: 'video', url: 'https://www.youtube.com/embed/B6u5wYHMLtw', caption: 'Full walkthrough showing role-based flows inside Learn Mate.' },
     ]
