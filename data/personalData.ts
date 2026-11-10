@@ -163,7 +163,7 @@ export const projectsData: Project[] = [
     icon: FaBell,
     githubUrl: "https://github.com/lochana-dahanayake/courseweb-notifications-filter",
     media: [
-      { type: 'video', url: 'https://www.youtube.com/embed/mFMUsWp13Zc', caption: 'On the real CourseWeb: changing the batch and sub-group updates the module page instantly, then the title checker.' },
+      { type: 'video', url: 'https://www.youtube.com/embed/iwl-yqYkWDQ', caption: 'On the real CourseWeb: changing the sub-group, campus and batch, and the module page showing which lab link is yours.' },
     ]
   },
   {
